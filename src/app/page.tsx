@@ -23,7 +23,7 @@ interface Chamado {
 
 export default function Home() {
   const { data: todosChamados } = useSWR<Chamado[]>(
-    "https://api-tomticket.hasarbrasil.com.br/buscarchamado",
+    "http://api-tomticket.hasarbrasil.com.br/buscarchamado",
     fetcher,
     { refreshInterval: 5000 }
   );
